@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+    <head>
+        <title>[[#{home.index.headline}]]</title>
+    </head>
+    <body>
+        <div layout:fragment="content">
+            <div class="md:w-2/5 mb-12">
+                <div class="flex flex-col border border-gray-300 rounded">
+                    <a th:href="@{/details}" class="w-full border-gray-300 hover:bg-gray-100 border-b rounded-t px-4 py-2">[[#{detail.list.headline}]]</a>
+                    <a th:href="@{/workpieces}" class="w-full border-gray-300 hover:bg-gray-100 border-b px-4 py-2">[[#{workpiece.list.headline}]]</a>
+                    <a th:href="@{/nodes}" class="w-full border-gray-300 hover:bg-gray-100 border-b px-4 py-2">[[#{node.list.headline}]]</a>
+                    <a th:href="@{/repairedProducts}" class="w-full border-gray-300 hover:bg-gray-100 rounded-b px-4 py-2">[[#{repairedProduct.list.headline}]]</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
